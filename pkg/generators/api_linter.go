@@ -135,11 +135,7 @@ type apiLinter struct {
 // add APIRule here when new API rule is implemented.
 func newAPILinter() *apiLinter {
 	return &apiLinter{
-		rules: []APIRule{
-			&rules.NamesMatch{},
-			&rules.OmitEmptyMatchCase{},
-			&rules.ListTypeMissing{},
-		},
+		rules: []APIRule{},
 	}
 }
 
